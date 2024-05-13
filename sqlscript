@@ -4,8 +4,8 @@ FROM SalesOrder AS o
 JOIN Customer AS c ON o.CustomerId = c.CustomerId
 JOIN Product AS p ON o.ProductId = p.ProductId
 
- %%sql
- INSERT INTO `RetailDB`.`SalesOrder` VALUES (99999, CAST('2022-01-01' AS TimeStamp), 1, 6, 5, 1)
+%%sql
+INSERT INTO `RetailDB`.`SalesOrder` VALUES (99999, CAST('2022-01-01' AS TimeStamp), 1, 6, 5, 1)
 
- %%sql
- SELECT * FROM `RetailDB`.`SalesOrder` WHERE SalesOrderId = 99999
+%%sql
+SELECT * FROM `RetailDB`.`SalesOrder` WHERE SalesOrderId = 99999
